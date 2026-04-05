@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "2026-1_CV"
+version = "0.1.0"
+
+dependencies = [
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.4",
+    "opencv-python>=4.13.0.92",
+]
+
+# src 폴더 아래에 있는 패키지들을 찾으라고 알려줍니다.
+[tool.setuptools.packages.find]
+where = ["src"]
